@@ -83,7 +83,7 @@ public class explore {
 
     @When("User play music on Songs {string}")
     public void playSongs(String songs) throws InterruptedException  {
-        Thread.sleep(1000); // waiting element visible
+        Thread.sleep(3000); // waiting element visible
         driver.findElement(By.xpath("//ytmusic-section-list-renderer[@class='style-scope ytmusic-browse-response']//a[.='"+songs+"']")).isDisplayed();
         driver.findElement(By.xpath("//ytmusic-section-list-renderer[@class='style-scope ytmusic-browse-response']//a[.='"+songs+"']")).click();
         String getSlidePlay = String.valueOf(driver.findElement(By.cssSelector("#sliderBar[value='0']")));
@@ -93,9 +93,9 @@ public class explore {
 
     @Then("User can see LYCRICS music")
     public void verifyLyrics() throws InterruptedException {
-        Thread.sleep(2000); // waiting element visible
         driver.findElement(By.cssSelector("tp-yt-paper-tab:nth-of-type(2)")).click();
-        driver.findElement(By.xpath("//ytmusic-description-shelf-renderer[@class='style-scope ytmusic-section-list-renderer fullbleed']/yt-formatted-string[@class='non-expandable description style-scope ytmusic-description-shelf-renderer']")).isDisplayed();
+        Thread.sleep(2000); // waiting element visible
+        driver.findElement(By.cssSelector("[expanded] > .non-expandable")).isDisplayed();
     }
 
     @After
