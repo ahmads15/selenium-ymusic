@@ -15,7 +15,7 @@ Yang diperlukan sebelum running automation:
   buka Test_2.html (bila running dengan tags tersebut)
 - Pastikan setelah run automation jalankan command "mvn clean verify" untuk 
  generated cucumber reportnya
+    
 
-  Structure File :
 
   

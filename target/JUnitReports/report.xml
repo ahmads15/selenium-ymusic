@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.318">
-    <testcase classname="Explore - Youtube Music" name="User can see new releases music" time="10.044">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.635">
+    <testcase classname="Explore - Youtube Music" name="User can see LYRICS when play a songs" time="17.385">
         <system-out>
             <![CDATA[Given Open website Youtube Music............................................passed
-When User click menu "Explore"..............................................passed
-And User click menu "New releases"..........................................passed
-Then User can see new releases music........................................passed
+And User search music "Raisa" in search page................................passed
+And User click Profile Artist...............................................passed
+And User play music on Songs "Kali Kedua"...................................passed
+Then User can see LYCRICS music.............................................passed
 ]]>
         </system-out>
     </testcase>
