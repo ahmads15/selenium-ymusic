@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.318">
+    <testcase classname="Explore - Youtube Music" name="User can see new releases music" time="10.044">
+        <system-out>
+            <![CDATA[Given Open website Youtube Music............................................passed
+When User click menu "Explore"..............................................passed
+And User click menu "New releases"..........................................passed
+Then User can see new releases music........................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

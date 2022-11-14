@@ -1,0 +1,111 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-14T08:59:56.158Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3259632000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.explore.SetupBrowser()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "User can see new releases music",
+        "description": "",
+        "id": "explore---youtube-music;user-can-see-new-releases-music",
+        "after": [
+          {
+            "result": {
+              "duration": 192504000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.explore.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2582749000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Open website Youtube Music",
+            "match": {
+              "location": "StepDef.explore.openWebsiteYoutubeMusic()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1268318000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User click menu \"Explore\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Explore\"",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDef.explore.clickMenu(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2556971000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click menu \"New releases\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New releases\"",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDef.explore.clickMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69467000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User can see new releases music",
+            "match": {
+              "location": "StepDef.explore.verifyNewReleasesMusic()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test_2"
+          }
+        ]
+      }
+    ],
+    "name": "Explore - Youtube Music",
+    "description": "",
+    "id": "explore---youtube-music",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/explore.feature",
+    "tags": []
+  }
+]
